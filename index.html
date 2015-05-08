@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- HALLO!!!!!-->
+<html class="full" lang="de">
+  <head>
+      <meta charset="utf-8">
+      <meta content="IE=edge" http-equiv="X-UA-Compatible">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta content="ExplodingCamera.com" name="description">
+      <meta content="HenryMaxxx" name="author">
+      <link rel="shortcut icon" href="http://www.explodingcamera.com/favicon.ico?v=2" />
+      <title>EXPLODINGCAMERA.COM</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/full.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+      <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="vendors/jquery.easings.min.js"></script>
+      <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+      <script type="text/javascript" src="jquery.fullPage.js"></script>-->
+      <link href="https://bootswatch.com/yeti/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+
+  </head>
+  <body>
+  <!--
+      <div style="position: fixed; z-index: -99; width: 100%; height: 100%; top: -7%">
+          <iframe frameborder="0" height="120%" id="ytplayer" name="ytplayer"
+          src="https://www.youtube-nocookie.com/embed/CQ5NAcy9uDE?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=CQ5NAcy9uDE"
+          width="100%"></iframe>
+      </div>
+  -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" id="header" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    </button> <a class="navbar-brand disabled" href="#">EXPLODINGCAMERA.COM</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <!--<li>
+                          <a href="http://ttt.explodingcamera.com"><i class=
+                          "fa fa-gamepad"></i> TTT</a>
+                      </li>-->
+                      <li>
+                          <a href="http://youtube.com/explodingkamera" target=
+                          "_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+                      </li>
+                      <li>
+                          <a href="http://ts.explodingcamera.com"><i class=
+                          "fa fa-microphone"></i> TS³</a>
+                      </li>
+                      <li>
+                          <a href="http://steamcommunity.com/id/henrymaxxx"
+                          target="_blank"><i class="fa fa-steam"></i> Steam</a>
+                      </li>
+                      <li>
+                          <a href="http://twitter.com/ExplodingCamera" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                      </li>
+                      <li><a href="http://paste.explodingcamera.com/"><i class="fa fa-trash-o"></i>  PASTE</a></li>
+                      <li><a href="http://blog.explodingcamera.com/"><i class="fa fa-rss"></i>  Blog</a></li>
+                      <!--<li><a href="http://waterfall.ga/">Waterfall.ga</a></li>
+                      <li><a href="http://putin24.tk/">Putin24.tk</a></li>-->
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <script>
+          $(document).ready(function() {
+              $('#fullpage').fullpage({
+                  //Navigation
+                  menu: true,
+                  anchors:['page1', 'page2', 'page3', 'page4'],
+                  navigation: true,
+                  navigationPosition: 'right',
+                  showActiveTooltips: false,
+                  slidesNavigation: true,
+                  slidesNavPosition: 'bottom',
+                  css3: true,
+                  scrollingSpeed: 700,
+                  autoScrolling: true,
+                  fitToSection: true,
+                  scrollBar: false,
+                  easing: 'easeInOutCubic',
+                  easingcss3: 'ease',
+                  loopBottom: true,
+                  loopTop: true,
+                  loopHorizontal: true,
+                  continuousVertical: false,
+                  normalScrollElements: '#element1, .element2',
+                  scrollOverflow: false,
+                  touchSensitivity: 15,
+                  normalScrollElementTouchThreshold: 5,
+                  keyboardScrolling: true,
+                  animateAnchor: true,
+                  controlArrows: true,
+                  verticalCentered: true,
+                  fixedElements: '#header, .footer',
+                  sectionSelector: '.section',
+                  slideSelector: '.slide',
+              });
+          });
+      </script>
+      <style>
+      #box1{
+        margin-left: auto;
+        margin-right: auto;
+        background-image:url("bg1.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      .box1text{
+        font-size: 8.0vw;
+        font-height: 88px;
+        font-family: 'Open Sans';
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+      }
+      @-webkit-keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+      .box1text:hover{
+        font-size: 8.0vw;
+        font-height: 88px;
+        font-family: 'Open Sans';
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+      }
+      #box2{
+        background-image:url("bg2.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 80px;
+        line-height: 88px;
+      }
+      #box3{
+        background-image:url("bg3.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #box4{
+        background-image:url("bg4.jpg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+      }
+      </style>
+      <div id="fullpage">
+        <div class="section" id="box1">
+          <h1 class="box1text animated bounceInUp">Wilkommen auf ExplodingCamera.com</h1>
+
+        </div>
+        <div class="section" id="box2">
+
+        </div>
+        <div class="section" id="box3">
+
+        </div>
+        <div class="section" id="box4">
+
+        </div>
+      </div>
+  </body>
+</html>
