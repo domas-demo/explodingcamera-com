@@ -1,17 +1,17 @@
-# ExplodingCamera.com
+## ExplodingCamera.com ##
 
-License:
-I used these Libarys to create ExplodingCamera.com:
-Animate.CSS     https://github.com/daneden/animate.css
-Bootstrap       https://github.com/twbs/bootstrap
-jquery          https://github.com/jquery/jquery
-FullPage.js     https://github.com/alvarotrigo/fullPage.js
-FontAwesome     https://github.com/FortAwesome/Font-Awesome
+# License: #
+I used these Libarys to create ExplodingCamera.com:  
+Animate.CSS     https://github.com/daneden/animate.css  
+Bootstrap       https://github.com/twbs/bootstrap  
+jquery          https://github.com/jquery/jquery  
+FullPage.js     https://github.com/alvarotrigo/fullPage.js  
+FontAwesome     https://github.com/FortAwesome/Font-Awesome  
 
 
-The MIT License (MIT)
+The MIT License (MIT)  
 
-Copyright (c) 2015 HenryMaxxx
+Copyright (c) 2015 HenryMaxxx  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
