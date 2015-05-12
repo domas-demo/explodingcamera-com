@@ -22,6 +22,7 @@
       <script src="vendors/jquery.easings.min.js"></script>
       <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
       <script type="text/javascript" src="jquery.fullPage.js"></script>-->
+      <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
       <link href="https://bootswatch.com/yeti/bootstrap.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
@@ -38,8 +39,8 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" id="header" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Navigation schließen</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -48,29 +49,15 @@
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <!--<li>
-                          <a href="http://ttt.explodingcamera.com"><i class=
-                          "fa fa-gamepad"></i> TTT</a>
-                      </li>-->
-                      <li>
-                          <a href="http://youtube.com/explodingkamera" target=
-                          "_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
-                      </li>
-                      <li>
-                          <a href="http://ts.explodingcamera.com"><i class=
-                          "fa fa-microphone"></i> TS³</a>
-                      </li>
-                      <li>
-                          <a href="http://steamcommunity.com/id/henrymaxxx"
-                          target="_blank"><i class="fa fa-steam"></i> Steam</a>
-                      </li>
-                      <li>
-                          <a href="http://twitter.com/ExplodingCamera" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
-                      </li>
-                      <li><a href="http://paste.explodingcamera.com/"><i class="fa fa-trash-o"></i>  PASTE</a></li>
-                      <li><a href="http://blog.explodingcamera.com/"><i class="fa fa-rss"></i>  Blog</a></li>
-                      <!--<li><a href="http://waterfall.ga/">Waterfall.ga</a></li>
-                      <li><a href="http://putin24.tk/">Putin24.tk</a></li>-->
+                      <li><a href="http://youtube.com/explodingkamera" target="_blank"><i class="fa fa-youtube-play"></i>&nbsp;&nbsp;YouTube</a></li>
+                      <li><a href="http://ts.explodingcamera.com"><i class="fa fa-microphone"></i> TS³</a></li>
+                      <li><a href="http://steamcommunity.com/id/henrymaxxx"target="_blank"><i class="fa fa-steam"></i>&nbsp;&nbsp;Steam</a></li>
+                      <li><a href="http://twitter.com/ExplodingCamera" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                      <li><a href="http://twitter.com/ExplodingCamera" target="_blank"><i class="fa fa-github"></i> Github</a></li>
+                      <li><a href="http://instagr.am/ExplodingCamera" target="_blank"><i class="fa fa-instagram"></i> Instgram</a></li>
+                      <li><a href="http://paste.explodingcamera.com/"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;PASTE</a></li>
+                      <li><a href="http://blog.explodingcamera.com/"><i class="fa fa-rss"></i>&nbsp;&nbsp;Blog</a></li>
+                      <li><a href="http://cloud.explodingcamera.com/"><i class="fa fa-cloud"></i>&nbsp;&nbsp;CLOUD</a></li>
                   </ul>
               </div>
           </div>
@@ -81,11 +68,9 @@
                   //Navigation
                   menu: true,
                   anchors:['page1', 'page2', 'page3', 'page4'],
-                  navigation: true,
-                  navigationPosition: 'right',
+                  navigation: false,
+                  navigationPosition: 'bottom',
                   showActiveTooltips: false,
-                  slidesNavigation: true,
-                  slidesNavPosition: 'bottom',
                   css3: true,
                   scrollingSpeed: 700,
                   autoScrolling: true,
@@ -128,25 +113,8 @@
         color: #FFFFFF;
         text-align: center;
         font-weight: bold;
-      }
-      @-webkit-keyframes fadeOut {
-        0% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0;
-        }
-      }
-
-      @keyframes fadeOut {
-        0% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0;
-        }
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
       }
       .box1text:hover{
         font-size: 8.0vw;
@@ -155,11 +123,27 @@
         color: #FFFFFF;
         text-align: center;
         font-weight: bold;
-        -webkit-animation-name: fadeOut;
-        animation-name: fadeOut;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;*/
+      }
+      .box1small{
+        font-size: 2.0vw;
+        font-family: 'Open Sans';
+        color: #FFFFFF;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .box1small:hover{
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;*/
       }
       #box2{
-        background-image:url("bg2.jpg");
+        background-image:url("bg9000.jpg");
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -183,15 +167,81 @@
         background-size: cover;
         height: 100%;
         font-family: 'Open Sans', sans-serif;
+            }
+            @-webkit-keyframes pulse {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+
+        50% {
+          -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
+        }
+
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
       }
+
+      @keyframes pulse {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+
+        50% {
+          -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
+        }
+
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+        }
+      }
+      @media (max-width: 991px) {
+        .fp-controlArrow {
+            display:none !important;
+        }
+      }
+      .fp-controlArrow.fp-prev{
+        left:15px;
+        width:0;
+        border-width:38.5px 34px 38.5px 0;
+        border-color:transparent #000 transparent transparent;
+        }
+      .fp-controlArrow.fp-next{
+        right:15px;
+        border-width:38.5px 0 38.5px 34px;
+        border-color:transparent transparent transparent #000;
+        }
+
+
       </style>
       <div id="fullpage">
         <div class="section" id="box1">
-          <h1 class="box1text animated bounceInUp">Wilkommen auf ExplodingCamera.com</h1>
-
+          <h1 class="box1text">ExplodingCamera.com</h1>
+          <center><small class="box1small">(&#x25BC; Weiter scrollen &#x25BC;)</small></center>
         </div>
         <div class="section" id="box2">
-
+          <div class="slide">
+            <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.7);">
+              <div class="container">
+                <h1 class="hidden-xs">Der ExplodingCamera.com Blog  <img class="hidden-xs" src="http://blog.explodingcamera.com/static/full.jpeg" height="50" width="50"></h1>
+                <h2 class="hidden-xs">Hier posten wir regelmäßig interessante Dinge rund um Gaming, Programmieren, teilweise auch Politik. Wir geben uns Mühe das alles so angenehm wie möglich für euch zu Verpacken.
+                   Geführt wird der Blog von HenryMaxx und Christopher. Viel Spaß beim lesen und entdecken!</h2>
+                <h2 class="visible-xs-block">Der ExplodingCamera.com Blog  <img class="visible-xs-block" src="http://blog.explodingcamera.com/static/full.jpeg" height="50" width="50"></h1>
+                <h3 class="visible-xs-block">Hier posten wir regelmäßig interessante Dinge rund um Gaming, Programmieren, teilweise auch Politik.
+                  Geführt wird der Blog von HenryMax^xx und Christopher. Viel Spaß beim lesen und entdecken!</h2>
+                 <p><a class="btn btn-primary btn-lg" href="http://blog.explodingcamera.com" role="button">Zum Blog</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="slide"> Slide 2 </div>
+          <div class="slide"> Slide 3 </div>
+          <div class="slide"> Slide 4 </div>
         </div>
         <div class="section" id="box3">
 

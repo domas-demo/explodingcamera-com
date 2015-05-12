@@ -1,0 +1,20 @@
+This zip file contains optimized resources for http://explodingcamera.com/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/bootstrap.css: http://explodingcamera.com/css/bootstrap.css
+css/full.css: http://explodingcamera.com/css/full.css
+css/font-awesome.min.css: http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+css/jquery.fullPage.css: http://explodingcamera.com/jquery.fullPage.css
+css/bootstrap_2.css: https://bootswatch.com/yeti/bootstrap.css
+js/jquery.easings.min.js: http://explodingcamera.com/vendors/jquery.easings.min.js
+js/jquery.slimscroll.min.js: http://explodingcamera.com/vendors/jquery.slimscroll.min.js
+js/jquery.fullPage.js: http://explodingcamera.com/jquery.fullPage.js
+image/bg1.jpg: http://explodingcamera.com/bg1.jpg
+NOT INCLUDED: http://explodingcamera.com/bg2.jpg
+image/bg3.jpg: http://explodingcamera.com/bg3.jpg
+NOT INCLUDED: http://explodingcamera.com/bg4.jpg
