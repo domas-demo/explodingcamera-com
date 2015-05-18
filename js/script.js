@@ -1,0 +1,32 @@
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: true,
+        anchors:['page1', 'page2', 'page3', 'page4'],
+        navigation: false,
+        navigationPosition: 'bottom',
+        showActiveTooltips: false,
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: true,
+        loopTop: true,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+        keyboardScrolling: true,
+        animateAnchor: true,
+        controlArrows: true,
+        verticalCentered: true,
+        fixedElements: '#header, .footer',
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+    });
+});
